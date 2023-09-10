@@ -1,0 +1,21 @@
+body{
+    font-family: Roboto, Arial;
+    font-weight: 300;
+    color: rgba(32, 33, 36, 1);
+    background-color: rgb(244, 248, 255);
+}
+
+.mainContent{
+    margin-left: 315px;
+}
+
+.content{
+    margin-top: 45px;
+}
+
+.bodySection{
+    position: relative;
+    margin-top: 82px;
+    height: 2000px;
+    background-color: white;
+}

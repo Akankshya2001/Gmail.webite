@@ -1,0 +1,81 @@
+.mails{
+    font-size: 14px;
+    min-width: 0;
+}
+
+
+@media (min-width: 870px) {
+    .mails .row{
+        display: flex;
+        flex: 1;
+        height: 40px;
+        align-items: center;
+        border-bottom: 1px solid rgb(233, 233, 233);
+        margin-left: 20px;
+        margin-right: 20px;
+        letter-spacing: 0.5px;
+        min-width: 0;
+    }
+
+    .mails .first_part,
+    .mails .second_part{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        min-width: 100px;
+    }
+
+    .mails .first_part{
+        width: 200px;
+        margin-right: 50px;
+    }
+
+    .mails .second_part{
+        width: 800px;
+        margin-right: 50px;
+    }
+
+    .mails .dots{
+        margin-right: 50px;
+    }
+    .first_part .mailid,
+    .second_part .heading,
+    .second_part .summary{
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+
+    }  
+}
+@media (max-width: 869px) {
+    .mails .first_part{
+        display: flex;
+        flex: 1;
+
+    }
+    .mails .second_part{
+        display: flex;
+        flex-direction: column;
+        margin-left: 70px;
+    }
+    .mails .dots{
+        display: inline;
+    }
+}
+
+
+.mails .select_box,
+.mails .star_mark,
+.mails .mailid{
+    margin-left: 10px;
+}
+
+.mails .mailid,
+.mails .heading,
+.mails .time{
+    font-weight: 500;
+}
+
+.mails .time{
+    font-size: 12.5px;
+}

@@ -1,0 +1,96 @@
+.mailTypes{
+    display: flex;
+    flex: 1;
+    padding-top: 20px;
+    border-bottom: 0.5px solid rgb(233, 233, 233);
+    min-width: 0;
+}
+
+.mailTypes .primary,
+.mailTypes .Promotions,
+.mailTypes .Social{
+    height: 60px;
+    width: 250px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    transition: background-color 0.15s;
+}
+.mailTypes .primary:hover,
+.mailTypes .Promotions:hover,
+.mailTypes .Social:hover{
+    background-color: rgba(233, 233, 233, 0.533);
+}
+
+.mailTypes .img{
+    margin-left: 15px;
+    margin-right: 15px;
+}
+.primary .headings,
+.Promotions .headings,
+.Social .headings{
+    font-size: 14px;
+    font-weight: 500;
+    display: flex;
+    letter-spacing: 0.5px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    min-width: 0;
+}
+
+.mailTypes .notification{
+    font-size: 12px;
+    color: white;
+    margin-left: 8px;
+    border-radius: 8px;
+    padding-left: 2px;
+    padding-right: 2px;
+    padding-top: 2px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    min-width: 0;
+}
+
+.primary .notification{
+    background-color: rgb(11, 121, 255);
+}
+.primary .name{
+    color: rgb(0, 64, 255);
+}
+.Promotions .notification{
+    background-color: green;
+}
+.Social .notification{
+    background-color: rgb(0, 106, 255);
+}
+.mailTypes .info{
+    font-size: 11px;
+    color: gray;
+    font-weight: 200;
+    margin-top: 5px;
+    letter-spacing: 1px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    min-width: 0;
+}
+.primary{
+    position: relative;
+}
+.primary .underline{
+    position: absolute;
+    bottom: 0;
+    width: 230px;
+    height: 3px;
+    margin-bottom: 0px;
+    margin-left: -40px;
+    background-color: rgb(0, 64, 255);
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    min-width: 0;
+}

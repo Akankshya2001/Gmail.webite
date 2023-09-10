@@ -1,0 +1,144 @@
+.header{
+    position: fixed;
+    top: 0;
+    right: 0;
+    background-color: rgb(244, 248, 255);
+    height: 60px;
+    left: 315px;
+    display: flex;
+    align-items: center;
+    z-index: 200;
+}
+
+.header .search_bar{
+    position: relative;
+    display: flex;
+    align-items: center;
+    flex: 1;
+    min-width: 180px;
+    max-width: 700px;
+    background-color: rgb(234 241 251);
+    border-radius: 40px;
+    height: 45px;
+    margin-right: 0;
+}
+
+.Searchbar{
+    position: absolute;
+    background-color: rgb(234 241 251);
+    border: none;
+    left: 45px;
+    right: 80px;
+    font-size: 17px;
+    border-color: rgb(234 241 251);
+    border-style: solid;
+}
+
+input[type=text]:focus{
+    outline: none;
+}
+
+.search_icon{
+    position: absolute; 
+    left: 15px;
+}
+
+.header .middle_gap{
+    display: flex;
+    flex: 1;
+    max-width: 210px;
+    min-width: 10px;
+}
+
+.header .right_section{
+    display: flex;
+    margin-right: 10px;
+    justify-content: space-between;
+    align-items: center;
+    min-width: 280px;
+    margin-left: 0;
+}
+
+.header .away{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80px;
+    background-color: rgb(234 241 251);
+    height: 45px;
+    padding-left: 10px;
+    padding-right: 5px;
+    border-radius: 40px;
+}
+
+.away .text{
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.away .away_icon1{
+    width: 8px;
+    height: 8px;
+    border-color: rgba(32, 33, 36, 1);
+    border-style: solid;
+    border-radius: 10px;
+    border-width: 2px;
+}
+
+.google_apps_icon{
+    width: 25px;
+}
+
+.setting_icon{
+    position: relative;
+    width: 36px;
+}
+
+.support_icon{
+    position: relative;
+    width: 21px;
+}
+
+.profile{
+    position: relative;
+    border-radius: 20px;
+}
+
+.header .google_apps,
+.header .setting,
+.header .question,
+.header .profile_pic{
+    position: relative;
+    cursor: pointer;
+}
+
+
+.google_apps .tooltip,
+.setting .tooltip,
+.question .tooltip,
+.profile_pic .tooltip{
+    position: absolute;
+    bottom: -30px;
+    right: 0;
+    font-size: 12px;
+    padding: 5px 5px 5px 5px;
+    background-color: rgba(32, 33, 36, 0.8);
+    color: white;
+    border-radius: 4px;
+    opacity: 0;
+    transition: opacity 0.3s;
+    pointer-events: none;
+    white-space: nowrap;
+
+
+}
+.google_apps:hover .tooltip,
+.setting:hover .tooltip,
+.question:hover .tooltip,
+.profile_pic:hover .tooltip{
+    opacity: 1;
+}
+
+
+
+
